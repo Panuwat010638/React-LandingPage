@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.contianer{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.BG-SkillandEdu{
+    background-color: black;
+}
+.BG-SkillandEdu-con{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.tabs {
+  
+    padding: 15px;
+    color: black;
+    text-align: center;
+    background: #f36a8d;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    width: 4rem;
+  }
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .active-tabs  {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border-bottom: 1px solid rgb(224, 16, 16);
+    transition: 0.7s
+  }
+  
+ 
+  .about-bthRhalfContent button {
+    border: none;
+    
+  }
+  .TagHead{
+    display: flex;
+  
+  }
+  .about-RHalfCon-tabs {
+    background-color:rgb(34, 33, 33); ;
+    height: 350px;
+    width: 100%;
+    
+  }
+  .about-RHalfCon{
+    background: rgb(34, 33, 33);
+    color: rgba(255, 255, 255, 0.866);
+    padding: 20px;
+    display: none;
+    
+  }
+  .about-RHalfCon h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  .about-RHalfCon p {
+    font-size: 1.4rem;
+  }
+  .about-RHalfBclass{
+    font-family: 'Poppins', sans-serif;
+    color: #f36a8d;
+    font-size: 1.25rem;
+  }
+  .active-content {
+    display: block;
+    
+  }
+  
+    

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.contianer{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.header-navber{
+    background: black;
+    height: 80px;
+}
+.header-navber-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.icon-con{
+    color: white;
+    font-size: bold;
+}
+.navbar-span{
+    color: red;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+.menu li {
+    padding-right: 2rem;
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu li a:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+.mobile-menu {
+    display: none;
+}
+@media screen and (max-width: 480px) {
+
+    .mobile-menu {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+    }
+    .header-navbar {
+        padding: 0 2rem;
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 64px;
+        left: -100%;
+        opacity: 0;
+        transition: 0.5s ease;
+       
+    }
+    .menu.active {
+        background: #111;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+        padding-left: 0;
+        align-content: center;
+        transition: 0.5s ease;
+    }
+    .menu li {
+        padding-right: 0 ;
+    }
+    .menu-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vw;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.contianer{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.BG-contact{
+    background-color: black;
+}
+.BG-contact-con{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+}
+.block-contact-con{
+    display: flex;
+    flex-direction: column;
+}
+.BG-contact-con h2{
+    color: rgb(255, 0, 0);
+    font-size: 2.4rem;
+}
+.block-contact-con label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    width: 500px;
+    color: white;
+}
+.contact-text-con h1{
+    text-align: center;
+    color: rgb(252, 3, 3);
+}
+.contact-text-con p{
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+}
+.btnSubmit{
+    color: white;
+    background-color: rgb(185, 35, 115);
+    border: 2px solid rgba(253, 11, 156, 0.432);
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.btnSubmit:hover{
+    color: rgb(185, 35, 115);
+    background-color: black;
+    border: 2px solid rgba(253, 11, 156, 0.984);
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    box-shadow: 0px 0px 6px 6px rgba(255, 0, 187, 0.1);
+}
+.icon-contact-con{
+    transform: scale(1.5);
+    color: #dc0e75;
+    margin-right: 1rem;
+}
+@media screen and ( max-width: 480px){
+    .block-contact-con label{
+        
+        width: 100%;
+        
+    }
+}

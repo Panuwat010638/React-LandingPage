@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.contianer{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.BG-about{
+    background-color: black;
+}
+
+.BG-about-con{
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.blockaboutme{
+    display: block;
+    background: #221c1d;
+    border: 2px solid rgb(67, 50, 50);
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    height: 450px;
+  }
+  .about-img{
+
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  .about-img img{
+    display: block;
+    width: 200px;
+  }
+  .shadowabout{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+  }
+  .shadowabout::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    height: 7px;
+    width: 50px;
+    filter: blur(3px);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .shadowabout:hover .about-img{
+    transform: translateY(-10px);
+  }
+  .shadowabout:hover::after{
+    opacity: 1;
+  }
+  .about-h2class{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 35px;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgba(142, 37, 49, 0.711);
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #dc0e75;
+  }
+  .about-h3class{
+    color: rgba(255, 255, 255, 0.727);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(142, 37, 49, 0.8);
+    
+  }
+  .about-iconclass{
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+  }
+  .about-iconclass a h3{
+    list-style-type: none;
+    background: #f36a8d;
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-top: 15px; 
+  }
+  .about-iconclass a h3:hover{
+    background: #edffec;
+    color: #000;
+  }
+  .info-con{
+    height: 500px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+  }
+  .about-h1-con{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .about-h3-con{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .about-B-con{
+    font-size: 1.3rem;
+    color: #f36a8d;
+  }
+  .info-con p{
+    font-size: 1.4rem;
+  }
+  .info-span{
+    color: red;
+  }
+  @media screen and ( max-width: 480px){
+  .BG-about-con{
+    flex-direction: column; 
+    height: 100%;  
+  }
+  .blockaboutme{
+    height: 550px;
+  }
+}
